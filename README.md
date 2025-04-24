@@ -38,7 +38,7 @@ Um sistema simples e elegante de gerenciamento de usuários feito em PHP com MyS
 
 ### 2. Banco de Dados
 ```sql
-CREATE DATABASE crud_php;
+CREATE DATABASE crud_db;
 
 CREATE TABLE users (
   id INT AUTO_INCREMENT PRIMARY KEY,
