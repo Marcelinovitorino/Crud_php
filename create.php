@@ -1,5 +1,5 @@
 <?php include 'db.php'; ?>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style/style.css">
 
 <div class="container">
     <h2>Cadastrar Novo Usuário</h2>
