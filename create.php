@@ -1,5 +1,26 @@
 <?php include 'db.php'; ?>
 <link rel="stylesheet" href="style/style.css">
+<nav>
+      <div>
+        <b class="logo">UEM</b>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <a href="">Inicio</a>
+          </li>
+          <li>
+            <a href="">Galeria</a>
+          </li>
+          <li>
+            <a href="">Contacto</a>
+          </li>
+          <li>
+            <a href="">Acerca</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
 <div class="container">
     <h2>Cadastrar Novo Usuário</h2>

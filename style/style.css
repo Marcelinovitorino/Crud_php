@@ -1,4 +1,77 @@
 /* Estilos gerais */
+:root {
+    --blue: #1e90ff;
+    --primary: #0C8151;
+    --yellow: #F4D61A;
+    --white: #ffffff;
+    --altura-nav: 80px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    padding-top: var(--altura-nav);
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: var(--altura-nav);
+    background: var(--primary);
+    z-index: 999999999;
+}
+
+nav div {
+    position: relative;
+    height: 100%;
+}
+
+nav div:nth-child(1) {
+    float: left;
+}
+
+nav div:nth-child(2) {
+    float: right;
+    padding-right: 50px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+nav ul li {
+    float: left;
+    height: var(--altura-nav);
+}
+
+nav ul li:hover {
+    background: white;
+    border-bottom: var(--yellow) 5px solid;
+    height: calc(var(--altura-nav) - 5px);
+}
+nav ul li:hover > a{
+    color: var(--primary);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: var(--altura-nav);
+}
+
+nav .logo {
+    position: relative;
+    color: white;
+    line-height: var(--altura-nav);
+    font-size: 35px;
+    margin-left: 20px;
+}
 body {
     font-family: 'Arial', sans-serif;
     background: linear-gradient(135deg, #f7f9fc, #d0e3f1); /* Degradê suave no fundo */
@@ -16,6 +89,7 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     background: #ffffff; /* Fundo branco para o container */
     border: 1px solid #e0e0e0; /* Borda suave ao redor */
+    
 }
 
 /* Títulos */
@@ -162,16 +236,12 @@ table td a.btn-delete {
     text-align: center;
     font-size: 1.1em;
     color: #fff;
-    background: linear-gradient(135deg, #0056b3, #007BFF); /* degradê suave azul */
+    background: var(--primary); /* agora igual à navbar */
     box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.05);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
-.footer p {
-    margin: 0;
-}
-
 .footer strong {
-    color: #ffe600;
+    color: var(--yellow); /* mantém o destaque amarelo */
 }
